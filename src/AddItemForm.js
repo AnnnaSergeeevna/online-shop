@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Item from "./Item.js";
 import { v4 as uuidv4 } from "uuid";
 
-export default function AddItem(props) {
-    <form onSubmit={handleFormSubmit}>
+export default function AddItemForm(props) {
+    return <form onSubmit={props.onFormSubmit}>
         <div>
             <label htmlFor="name">Название товара: </label>
             <input
@@ -11,8 +11,8 @@ export default function AddItem(props) {
                 id="name"
                 placeholder="Название товара"
                 className="ui-textfield"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={props.name}
+                onChange={props.onNameChange}
                 required
             />
         </div>
@@ -23,8 +23,8 @@ export default function AddItem(props) {
                 id="desc"
                 placeholder="Описание товара"
                 className="ui-textfield"
-                value={desc}
-                onChange={(e) => setDesc(e.target.value)}
+                value={props.desc}
+                onChange={props.onDescChange}
                 required
             />
         </div>
