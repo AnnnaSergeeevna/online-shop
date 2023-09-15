@@ -1,6 +1,7 @@
-import Shop from './shop'
-import './index.css';
+import Shop from './Shop.js';
 import Header from './Header';
+import classes from './App.css';
+
 
 function App() {
   return (

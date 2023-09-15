@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Item from "./item.js";
+import Item from "./Item.js";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Shop() {
