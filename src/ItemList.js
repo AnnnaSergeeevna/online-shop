@@ -8,7 +8,7 @@ export default function ItemList(props) {
             <li className="ui-item-list" key={item.id}>
                 <Item info={item} />
                 <button className="item-button" onClick={props.removeItem}>
-                    Удалить
+                    Delete
                 </button>
             </li>
         ))}

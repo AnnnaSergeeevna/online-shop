@@ -1,15 +1,37 @@
 :root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
   --primary: rgb(142, 113, 86);
 
   --secondary: rgb(203, 184, 154);
   --light-gray: #cccccc;
 }
 
+
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   position: absolute;
   vertical-align: middle;
   top: 0%;
   font-family: Helvetica;
+  font-size: medium;
+}
+
+.App-logo {
+  font-family: Helvetica;
+  background-color: (245, 244, 244);
+  font-size: large;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+.App-logo img {
+  height: 100px;
 }
 
 h3 {

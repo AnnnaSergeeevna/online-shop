@@ -33,7 +33,7 @@ export default function AddItemForm(props) {
         </div>
         <div className="form-footer">
             <div className="validation"></div>
-            <input type="submit" className="ui-button" value="Добавить" />
+            <input type="submit" className="ui-button" value="Add" />
         </div>
     </form>
 }
