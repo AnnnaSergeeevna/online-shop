@@ -1,17 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Item(props) {
-    const [total, setTotal] = useState(0);
+    const [total, setTotal] = useState(1);
+    const [free, setFree] = useState(0)
 
     const { info } = props;
 
     function handleAddClick() {
-        setTotal(total + 1);
+        if (total > 0 && (total % 3 === 0)) {
+            setFree(free + 1)
+            setTotal(total + 1)
+        } else {
+            setTotal(total + 1)
+        }
     }
-
     function handleRemoveClick() {
-        if (total > 0) {
-            setTotal(total - 1);
+        if (total > 0 && (total % 3 === 0)) {
+            setTotal(total - 1)
+            setFree(free - 1)
+        } else {
+            setTotal(total - 1)
         }
     }
 
@@ -23,7 +31,7 @@ export default function Item(props) {
         <div className="item">
             <div className="item-info">
                 <h2 className="item-title">{info.name}</h2>
-                <p className="item-desc">{info.desc}</p>
+                {/* <p className="item-desc">{info.desc}</p> */}
             </div>
             <div className="item-quantity">
                 <button
@@ -38,6 +46,7 @@ export default function Item(props) {
                     +
                 </button>
             </div>
+            <h3>Бесплатновых: {free}</h3>
         </div>
     );
 }

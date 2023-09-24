@@ -1,5 +1,6 @@
 .head {
   font-family: Helvetica;
+  text-align: center;
   background-color: (245, 244, 244);
   font-size: xx-large;
   margin-bottom: 40px;
@@ -8,16 +9,15 @@
 
 .head img {
   height: 100px;
-
 }
 
-.login {
-  /* float:right;
+/* .login { */
+/* float:right;
   font-size: x-large;
   /* color: rgb(142, 9, 9); */
-  /* border-radius: 10px;
+/* border-radius: 10px;
   margin-top: 10px;
   margin-right: 10px; */
-  /* border-color: rgb(145, 145, 144); */
-  /* cursor: pointer; */
-}
+/* border-color: rgb(145, 145, 144); */
+/* cursor: pointer; */
+/* } */

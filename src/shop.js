@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddItemForm from "./AddItemForm.js";
 import ItemList from "./ItemList.js";
+import Mapbx from "./Mapbx.js";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Shop() {
@@ -46,6 +47,10 @@ export default function Shop() {
             </div>
             <div>
                 <ItemList items={items} removeItem={removeItem} />
+            </div>
+            <h4>Find us</h4>
+            <div id="map">
+                <Mapbx />
             </div>
         </>
     );

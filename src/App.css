@@ -1,5 +1,5 @@
 :root {
-  --primary: rgb(118, 95, 73);
+  --primary: rgb(142, 113, 86);
 
   --secondary: rgb(203, 184, 154);
   --light-gray: #cccccc;
@@ -13,8 +13,7 @@
 }
 
 h3 {
-  margin: 0;
-  padding: 0;
+  font-size: xx-large;
 }
 
 .ui-link {
@@ -45,6 +44,7 @@ h3 {
 
 .ui-button {
   background-color: var(--primary);
+  text-align: center;
   color: white;
   border: 0;
   padding: 15px 20px;
@@ -129,4 +129,15 @@ h3 {
 
 .item-total {
   font-size: 16px;
+}
+
+h4 {
+  margin-top: 70px;
+}
+
+#map {
+  width: 400px;
+  height: 300px;
+  font-family: Helvetica;
+  color: black;
 }
